@@ -1,4 +1,4 @@
-FROM openjdk:17-jre-slim
+FROM eclipse-temurin:17-jre-focal
 
 # Set environment variables
 ENV EULA=TRUE
