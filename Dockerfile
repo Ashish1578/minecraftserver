@@ -11,6 +11,9 @@ RUN wget "https://api.papermc.io/v2/projects/paper/versions/${VERSION}/builds/${
 
 RUN echo "eula=true" > eula.txt
 
+RUN echo "online-mode=false" >> server.properties
+RUN echo "max-players=30" >> server.properties
+
 EXPOSE 25565
 
-CMD ["java", "-Xmx${MEMORY}", "-Xms${MEMORY}", "-jar", "paper.jar", "nogui"]
+CMD java -Xmx${MEMORY} -Xms${MEMORY} -jar paper.jar nogui
