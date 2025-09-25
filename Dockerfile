@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jre-focal
+FROM eclipse-temurin:21-jre
 
 ENV EULA=TRUE
 ENV MEMORY=5G
