@@ -3,11 +3,11 @@ FROM eclipse-temurin:17-jre-focal
 ENV EULA=TRUE
 ENV MEMORY=5G
 ENV VERSION=1.21.8
+ENV BUILD=60
 
 RUN apt-get update && apt-get install -y wget
 
-# Download PaperMC server jar for version 1.21.8
-RUN wget "https://api.papermc.io/v2/projects/paper/versions/${VERSION}/builds/latest/downloads/paper-${VERSION}-latest.jar" -O paper.jar
+RUN wget "https://api.papermc.io/v2/projects/paper/versions/${VERSION}/builds/${BUILD}/downloads/paper-${VERSION}-${BUILD}.jar" -O paper.jar
 
 RUN echo "eula=true" > eula.txt
 
