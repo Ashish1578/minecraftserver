@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-focal
+FROM eclipse-temurin:21-jre-focal
 
 ENV EULA=TRUE
 ENV MEMORY=5G
@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y wget
 RUN wget "https://api.papermc.io/v2/projects/paper/versions/${VERSION}/builds/${BUILD}/downloads/paper-${VERSION}-${BUILD}.jar" -O paper.jar
 
 RUN echo "eula=true" > eula.txt
-
 RUN echo "online-mode=false" >> server.properties
 RUN echo "max-players=30" >> server.properties
 
