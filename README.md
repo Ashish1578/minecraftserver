@@ -1,4 +1,4 @@
-# Web Service Deployment Guide (Free Tier)
+# Minecraft AFK bot Web Service Deployment Guide (Free Tier)
 
 ## 🌐 HTTP Server + Minecraft Bot Combo
 
