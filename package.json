@@ -1,0 +1,30 @@
+{
+  "name": "minecraft-afk-bot",
+  "version": "1.0.0",
+  "description": "Minecraft AFK Bot with auto-movement and respawn capabilities",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.17.0",
+    "mineflayer-pathfinder": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "minecraft",
+    "bot",
+    "afk",
+    "automation",
+    "mineflayer"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/minecraft-afk-bot"
+  }
+}
