@@ -8,7 +8,7 @@ const BOT_CONFIG = {
     port: parseInt(process.env.SERVER_PORT) || 25565,
     username: process.env.BOT_USERNAME || 'AFKBot',
     password: process.env.BOT_PASSWORD || '',
-    version: process.env.MC_VERSION || '1.20.1',
+    version: process.env.MC_VERSION || '1.21.8',
     auth: process.env.AUTH_TYPE || 'offline'
 };
 
